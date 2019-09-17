@@ -1,0 +1,16 @@
+# development
+*.txt
+logs
+*.log*
+*.sublime-workspace
+*.sublime-project
+
+# dependencies
+/node_modules
+
+# production
+/build
+
+# others
+.env
+

@@ -1,0 +1,31 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": false,
+  "authentication": {
+    "secret": "0865011adcbb299e74b585ca8e8296f70a970a051e3b6a1b8524f07c7d2e3b980349b456ec01ae49e7e20ffad7b3be394b4c4b135756661be0c1e7675c542a84538417b8b7dd8a23ee400c9018f9d3af48917d582c1a7d6fd4b43560e64e2cc2a6ba4d941b808f8170403bcedc43dc10a7ce915147716e10fcb5f8454679e35420fbc0a258290b95b48ad98b64c7a128960b03abaf0e42a2b8a727b9f2a0af311a0f1e91dec48961b8b67fb080e267702e824fbd3b0f671720c51648d15203473459cc0329fd179f37c93697e73a9436d581a9405cd5c5e389acf56ef994b9e39ed6ced6b88ce8427701e869302f13b9be699c16147990f802af553ad5691d55",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "postgres": "postgres://postgres:@localhost:5432/noxmon_io"
+}
