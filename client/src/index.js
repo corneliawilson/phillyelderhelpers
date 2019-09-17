@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import store from './utils/store';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import * as serviceWorker from './utils/serviceWorker';
 

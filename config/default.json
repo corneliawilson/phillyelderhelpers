@@ -1,6 +1,6 @@
 {
   "host": "localhost",
-  "port": 3030,
+  "port": 5000,
   "public": "../public/",
   "paginate": false,
   "authentication": {
@@ -26,6 +26,5 @@
       "usernameField": "email",
       "passwordField": "password"
     }
-  },
-  "postgres": "postgres://postgres:@localhost:5432/noxmon_io"
+  }
 }

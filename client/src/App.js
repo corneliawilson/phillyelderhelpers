@@ -34,6 +34,11 @@ const Page500 = Loadable({
   loading
 });
 
+const Dashboard = Loadable({
+  loader: () => import('./views/Volunteer/Dashboard'),
+  loading
+});
+
 class App extends Component {
   render() {
     return (
@@ -48,6 +53,7 @@ class App extends Component {
 
           <IsAuth>
             <Switch>
+              <Route path='/user/' name="Dashboard" component={Dashboard}/>
             </Switch>
           </IsAuth>
         </Switch>

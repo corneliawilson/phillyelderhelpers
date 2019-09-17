@@ -6,42 +6,17 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const users = sequelizeClient.define('users', {
-    username: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false
     },
     email: {
       type: DataTypes.STRING,
-      unique: true,
       allowNull: false
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    role: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    manager_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'users',
-        key: 'id'
-      }
-    },
-    first_name: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    last_name: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    company: {
-      type: DataTypes.STRING,
-      allowNull: true
     },
     address: {
       type: DataTypes.STRING,
@@ -59,40 +34,8 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    country: {
+    phone: {
       type: DataTypes.STRING,
-      allowNull: true
-    },
-    telephone: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    isVerified: {
-      type: DataTypes.BOOLEAN,
-      allowNull: true
-    },
-    verifyToken: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    verifyExpires: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    verifyChanges: {
-      type: DataTypes.JSON,
-      allowNull: true
-    },
-    resetToken: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    resetExpires: {
-      type: DataTypes.BIGINT,
-      allowNull: true
-    },
-    invited_by: {
-      type: DataTypes.INTEGER,
       allowNull: true
     }
   }, {

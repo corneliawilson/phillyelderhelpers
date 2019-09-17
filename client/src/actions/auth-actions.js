@@ -56,36 +56,15 @@ export function login(credentials) {
 }
 
 
-export function register(credentials, token) {
+export function register(credentials) {
 	const { 
 		password, 
-		first_name,
-		last_name,
-		address,
-		zip,
-		city,
-		state,
-		country,
-		telephone
 	} = credentials;
 
 	return dispatch => {
 		dispatch(requestClient(REGISTER));
-			return client.service('authManagement').create({
-				action: 'verifySignupLong',
-				value: token,
-				credentials: { 
-					password: password, 
-					first_name: first_name,
-					last_name: last_name,
-					address: address,
-					zip: zip,
-					city: city,
-					state: state,
-					country: country,
-					telephone: telephone
-				}
-			}).then (response => {
+			return client.service('users').create(credentials)
+			.then (response => {
 				dispatch(successClient(REGISTER));
 				dispatch(login({ 
 					email: response.email,

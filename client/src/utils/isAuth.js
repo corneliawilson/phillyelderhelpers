@@ -15,7 +15,7 @@ class IsAuth extends Component {
 				return this.props.children;
 		} else {
 			this.props.checkAuthentication();
-			return <Redirect to="/login" />;
+			return <Redirect to="/" />;
 		}
 	}
 }

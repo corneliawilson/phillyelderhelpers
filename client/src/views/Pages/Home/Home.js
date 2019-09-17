@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class Home extends Component {
 
@@ -13,12 +13,20 @@ class Home extends Component {
 
   render() {
     if (this.props.isAuthenticated) {
-      return <Redirect to="/" />
+      return <Redirect to="/user/" />
     } else {
       return (
         <div className="app">
-          <div className="app-body flex-row align-items-center">
           Home page
+          <div>
+            <ul>
+              <li>
+                <Link to="/login">Log In</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
+            </ul>
           </div>
         </div>
       );

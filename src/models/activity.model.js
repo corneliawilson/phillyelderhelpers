@@ -19,7 +19,7 @@ module.exports = function (app) {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'activity-types',
+        model: 'activity_types',
         key: 'id'
       }
     },

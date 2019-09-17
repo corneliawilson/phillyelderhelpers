@@ -1,9 +1,9 @@
 {
-  "short_name": "Noxmon",
-  "name": "Noxmon.io",
+  "short_name": "PEH",
+  "name": "Philly Elder Helpers",
   "icons": [
     {
-      "src": "./assets/vendor_risk_management.png",
+      "src": "./logo-small.png",
       "sizes": "100x100",
       "type": "image/png"
     }
