@@ -5,6 +5,7 @@ import { logout } from '../../actions/auth-actions';
 
 import { Card, CardBody, Button } from 'reactstrap';
 import Navigation from '../../components/Navigation';
+import Tables from '../../PaperTables';
 
 class Dashboard extends Component {
 
@@ -20,6 +21,7 @@ class Dashboard extends Component {
       <div className="app">
         <Navigation />
         This is the senior dashboard
+        <Tables />
         <Card>
           <CardBody>
             You're logged in!
