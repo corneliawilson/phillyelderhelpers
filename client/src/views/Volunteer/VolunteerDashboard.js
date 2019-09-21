@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { logout } from '../../actions/auth-actions';
 
 import { Card, CardBody, Button } from 'reactstrap';
+import Navigation from '../../components/Navigation';
+
 
 class Dashboard extends Component {
 
@@ -17,7 +19,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="app">
-        This is a dahsboard
+        This is the volunteer dashboard
+        <Navigation />   
+        
         <Card>
           <CardBody>
             You're logged in!

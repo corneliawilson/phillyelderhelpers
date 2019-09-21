@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 
+import Navigation from '../../../components/Navigation';
+
+
 class Home extends Component {
 
   constructor(props) {
@@ -12,11 +15,12 @@ class Home extends Component {
   }
 
   render() {
-    if (this.props.isAuthenticated) {
-      return <Redirect to="/user/" />
-    } else {
+    // if (this.props.isAuthenticated) {
+    //   return <Redirect to="/user/" />
+    // } else {
       return (
         <div className="app">
+        <Navigation />
           Home page
           <div>
             <ul>
@@ -31,7 +35,7 @@ class Home extends Component {
         </div>
       );
     }
-  }
+  //}
 }
 
 function mapStateToProps(state) {
