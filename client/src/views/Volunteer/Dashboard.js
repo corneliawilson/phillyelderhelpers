@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { logout } from '../../actions/auth-actions';
 
-import { Button } from 'reactstrap';
+import { Card, CardBody, Button } from 'reactstrap';
 
 class Dashboard extends Component {
 
@@ -15,22 +15,24 @@ class Dashboard extends Component {
   }
 
   render() {
-    if (!this.props.isAuthenticated) {
-      return <Redirect to="/" />
-    } else {
-      return (
-        <div className="app">
-          You're logged in!
-          <Button
-            className="btn-round"
-            color="primary"
-            onClick={() => this.props.logout()}
-          >
-            Log out
-          </Button>
-        </div>
-      );
-    }
+    return (
+      <div className="app">
+        This is a dahsboard
+        <Card>
+          <CardBody>
+            You're logged in!
+            <Button
+              className="btn-round"
+              color="primary"
+              onClick={() => this.props.logout()}
+            >
+              Log out
+            </Button>
+          </CardBody>
+        </Card>
+
+      </div>
+    );
   }
 }
 
