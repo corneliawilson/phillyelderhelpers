@@ -16,13 +16,22 @@ class Navigation extends Component {
           <nav>
             <ul>
               <li>
+                <Link to="/login">Log In</Link>
+              </li>
+              <li>
+                <Link to="/register">Register</Link>
+              </li>
+              <li>
                 <Link to="/volunteer/">Go to volunteer dashboard</Link>
               </li>
               <li>
                 <Link to="/user/" >Go to senior dashboard</Link>
               </li>
               <li>
-                <Link to="/" >Go to public home</Link>
+                <Link to="/">Go to public home</Link>
+              </li>
+              <li>
+                <Link to="/srregister">Go to senior registration</Link>
               </li>
             </ul>
           </nav>

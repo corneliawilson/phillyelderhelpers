@@ -294,7 +294,7 @@
 .main-panel{
     position: relative;
     float: right;
-    width: $sidebar-width;
+    width: 100%;
     background-color: #f4f3ef;;
 
 
@@ -303,7 +303,7 @@
     > .content{
         padding: 0 30px 30px;
         min-height: calc(100vh - 123px);
-        margin-top: 93px;
+        margin-top: 60px;
     }
 
     > .navbar{

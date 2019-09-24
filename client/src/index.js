@@ -10,10 +10,11 @@ import App from './App';
 import store from './utils/store';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./assets/scss/paper-dashboard.scss?v=1.1.0";
-import "./assets/demo/demo.css";
-import "perfect-scrollbar/css/perfect-scrollbar.css";
+// import "./assets/scss/paper-dashboard.scss?v=1.1.0";
+// import "./assets/demo/demo.css"; 
+// import "perfect-scrollbar/css/perfect-scrollbar.css";
 import './index.css';
+
 
 import * as serviceWorker from './utils/serviceWorker';
 

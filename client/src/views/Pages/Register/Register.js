@@ -18,6 +18,9 @@ import {
   FormFeedback
 } from 'reactstrap';
 
+
+import Buttons from './Buttons';
+
 class Register extends Component {
 
   constructor(props) {
@@ -265,6 +268,9 @@ class Register extends Component {
                 </Form>
               </CardBody>
             </Card>
+
+            <Buttons />
+            
           </Container>
         </div>
       );
