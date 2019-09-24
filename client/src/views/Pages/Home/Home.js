@@ -15,15 +15,6 @@ import ImageSection from './ImageSection';
 
 class Home extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-    };
-  }
-
-
-
   render() {
     const text1 = (
       <div className="section-text">

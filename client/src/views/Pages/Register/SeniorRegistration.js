@@ -15,8 +15,6 @@ class SeniorRegistration extends Component {
   }
 
   render() {
-
-    console.log("IM HERE");
     return (
       <div>
         <Navigation />
