@@ -20,14 +20,24 @@ class SeniorHome extends Component {
       <div>
         <Container>
           <Row>
-            How it works
+            <h3><b>How it works</b></h3>
           </Row>
           <Row>
             <Col>
               <Card>
                 <CardBody>
-                  <h4>Sign up</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h4><b>Sign up</b></h4>
+                  <p><h5>Are you a senior citizen in Philadelphia who needs help with yardwork or basic home maintenance?
+					 <br/>
+					 <br/>
+					 Do you know a senior citizen in Philadelphia who needs help with yardwork or basic home maintenance?
+					 <br/>
+					 <br/>
+					 Sign up for <b><i>Philly Elder Helpers</i></b> by clicking on the <b>Register now</b> button.
+					 <br/>
+					 <br/>
+					 We will contact you when volunteers will be in your neighborhood.
+				  </h5></p>
                   <Link to="register/senior/">
                     <Button>Register now</Button>
                   </Link>
@@ -37,16 +47,33 @@ class SeniorHome extends Component {
             <Col>
               <Card>
                 <CardBody>
-                  <h4>Add a task request</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h4><b>Add a task request</b></h4>
+                  <p><h5>What household tasks present a challenge for you?
+				     <br/>
+				     <br/>
+				     How can we help?
+					 <br/>
+					 <br/>
+					 Let us know by clicking on the <b>Task request</b> button.
+				  </h5></p>
+                  <Link to="register/senior/request/">
+                    <Button>Task request</Button>
+                  </Link>
                 </CardBody>
               </Card>
             </Col>
             <Col>
               <Card>
                 <CardBody>
-                  <h4>Confirm your visit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <h4><b>Confirm your visit</b></h4>
+                  <p><h5>Volunteers from <b><i>Philly Elder Helpers</i></b> are going to be in your neighborhood.  They are ready to help you!
+					 <br/>
+					 <br/>
+					 Click on the <b>Confirm visit</b> button to confirm that you want volunteers to visit you on the specified date for your neighborhood.
+				  </h5></p>
+                  <Link to="register/senior/confirm/">
+                    <Button>Confirm visit</Button>
+                  </Link>
                 </CardBody>
               </Card>
             </Col>

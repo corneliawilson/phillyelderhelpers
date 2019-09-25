@@ -19,12 +19,24 @@ class Home extends Component {
     const text1 = (
       <div className="section-text">
         <Row>
-          <h4>Philly Elder Helpers</h4>
+          <h3><b>Philly Elder Helpers</b></h3>
         </Row>
         <Row>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p><h5>
+            <br/>
+			<b>What we do:  </b>
+			Philly Elder Helpers matches up Philadelphia senior citizens who need assistance with yardwork or basic home maintenance with volunteer groups who can help!
+			<br/>
+			<br/>
+			<b>Why we do this:  </b>
+			The need to perform simple home repair may present a challenge for seniors. This project aims to help Philadelphia seniors age in place, by connecting them with volunteers who can help with yardwork and basic home maintenance.
+			<br/>
+			<br/>
+			<b><i>Senior citizens who live in Philadelphia can sign up for this free service.</i></b>
+			<br/>
+			<br/>
+			Volunteer groups in the Philadelphia area can sign up to volunteer.
+          </h5></p>
         </Row>
         <Row className="justify-content-md-center btn-row">
           <Col className="text-right m-3">
