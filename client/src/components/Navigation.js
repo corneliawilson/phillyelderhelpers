@@ -19,19 +19,16 @@ class Navigation extends Component {
                 <Link to="/login">Log In</Link>
               </li>
               <li>
-                <Link to="/register">Register</Link>
+                <Link to="/volunteer/dashboard/">Go to volunteer dashboard</Link>
               </li>
               <li>
-                <Link to="/volunteer/">Go to volunteer dashboard</Link>
-              </li>
-              <li>
-                <Link to="/user/" >Go to senior dashboard</Link>
+                <Link to="/senior/dashboard/" >Go to senior dashboard</Link>
               </li>
               <li>
                 <Link to="/">Go to public home</Link>
               </li>
               <li>
-                <Link to="/srregister">Go to senior registration</Link>
+                <Link to="/register/senior">Go to senior registration</Link>
               </li>
             </ul>
           </nav>

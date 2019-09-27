@@ -5,7 +5,7 @@ import { Card, CardBody, Button } from 'reactstrap';
 import Navigation from '../../components/Navigation';
 
 
-class VolunteerDashboard extends Component {
+class CreateRequestPage extends Component {
 
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ class VolunteerDashboard extends Component {
   render() {
     return (
       <div className="app">
-        This is the volunteer dashboard
+        Senior create request page
         <Navigation />   
 
 
@@ -26,4 +26,4 @@ class VolunteerDashboard extends Component {
   }
 }
 
-export default VolunteerDashboard;
+export default CreateRequestPage;
