@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
+import { loadModules } from '@esri/react-arcgis';
 
 import { 
   Container, 
@@ -64,6 +65,7 @@ class Home extends Component {
             alt_text="neighborhood" 
             text={text1}
           />
+          <Widget />
           <Navigation />
           
         </div>
