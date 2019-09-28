@@ -1,0 +1,20 @@
+.skillBar {
+	margin: 5px;
+	padding: 3px 15px;
+	border-radius: 20px 0px 0px 20px;
+} 
+
+.skillBar:hover {
+	border: solid #005A23 1px;
+	padding: 2px 14px;
+	border-right: none;
+}
+
+.skillSelected {
+	background-color: #D9EDDF
+}
+
+.skillSelected:hover {
+	border: none;
+	padding: 3px 15px;
+}
