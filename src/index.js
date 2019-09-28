@@ -4,6 +4,8 @@ const app = require('./app');
 const port = process.env.PORT || app.get('port');
 const server = app.listen(port);
 
+console.log("PORT: ", port);
+
 process.on('unhandledRejection', (reason, p) =>
   logger.error('Unhandled Rejection at: Promise ', p, reason)
 );

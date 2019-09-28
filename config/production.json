@@ -1,5 +1,5 @@
 {
-  "port": "PORT",
+  "port": "5000",
   "postgres": "DATABASE_URL",
   "frontend": "./client/build"
 }

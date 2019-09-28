@@ -48,6 +48,7 @@ app.configure(services);
 // Set up event channels (see channels.js)
 app.configure(channels);
 
+console.log(process.env.NODE_ENV);
 // modified
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
