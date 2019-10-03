@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { Button, Card, CardBody } from 'reactstrap';
-import Buttons from '../Register/Buttons';
 import Navigation from '../../../components/Navigation';
 import CustomStepper from '../../../components/CustomStepper';
 

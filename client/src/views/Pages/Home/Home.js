@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
-import { loadModules } from '@esri/react-arcgis';
 
 import { 
   Container, 
@@ -13,6 +12,7 @@ import {
 import Navigation from '../../../components/Navigation';
 import img1 from '../../../assets/imgs/neighborhood.jpg';
 import ImageSection from './ImageSection';
+import AddressField from '../../../components/AddressField';
 
 class Home extends Component {
 
@@ -23,7 +23,7 @@ class Home extends Component {
           <h3><b>Philly Elder Helpers</b></h3>
         </Row>
         <Row>
-          <p><h5>
+          <h5>
             <br/>
 			<b>What we do:  </b>
 			Philly Elder Helpers matches up Philadelphia senior citizens who need assistance with yardwork or basic home maintenance with volunteer groups who can help!
@@ -37,7 +37,7 @@ class Home extends Component {
 			<br/>
 			<br/>
 			Volunteer groups in the Philadelphia area can sign up to volunteer.
-          </h5></p>
+          </h5>
         </Row>
         <Row className="justify-content-md-center btn-row">
           <Col className="text-right m-3">
@@ -65,7 +65,7 @@ class Home extends Component {
             alt_text="neighborhood" 
             text={text1}
           />
-          <Widget />
+          <AddressField />
           <Navigation />
           
         </div>
